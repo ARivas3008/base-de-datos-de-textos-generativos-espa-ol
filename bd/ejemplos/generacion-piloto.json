@@ -1,0 +1,477 @@
+{
+  "fuentes": [
+    {
+      "id": "conha-nh0001",
+      "titulo": "El guajiro"
+    },
+    {
+      "id": "conha-nh0002",
+      "titulo": "Divertidas aventuras del nieto de Juan Moreira"
+    },
+    {
+      "id": "conha-nh0011",
+      "titulo": "Sin rumbo"
+    },
+    {
+      "id": "conha-nh0017",
+      "titulo": "Amalia"
+    },
+    {
+      "id": "conha-nh0027",
+      "titulo": "La gran aldea"
+    },
+    {
+      "id": "conha-nh0035",
+      "titulo": "La novia del hereje o La Inquisición de Lima"
+    },
+    {
+      "id": "conha-nh0005",
+      "titulo": "Cuentos de invierno"
+    },
+    {
+      "id": "oro-prosa-07",
+      "titulo": "Fuerza de la sangre"
+    }
+  ],
+  "resultados": [
+    {
+      "texto": "Al caer la tarde, el caminante entró en la aldea. Se detuvo un instante para mirar la plaza y escuchó el ruido de los pasos. Llevaba consigo una promesa que le impedía olvidar lo sucedido. Mientras buscaba un lugar donde descansar, pensó que aún estaba a tiempo de seguir adelante.",
+      "modo": "narrativo",
+      "semilla": 27,
+      "metodo": "plantillas redactadas + expresiones o palabras atestiguadas, selección ponderada por raíz de frecuencia; no es un LLM",
+      "obras_analizadas": 8,
+      "coincidencia_8_palabras": false,
+      "evidencias": [
+        {
+          "slot": "momento",
+          "expresion": "Al caer la tarde",
+          "tipo": "expresión contigua",
+          "evidencia": [
+            {
+              "obra": "conha-nh0002",
+              "frecuencia": 3
+            },
+            {
+              "obra": "conha-nh0035",
+              "frecuencia": 1
+            }
+          ]
+        },
+        {
+          "slot": "viajero",
+          "expresion": "el caminante",
+          "tipo": "expresión contigua",
+          "evidencia": [
+            {
+              "obra": "conha-nh0005",
+              "frecuencia": 1
+            }
+          ]
+        },
+        {
+          "slot": "llegada",
+          "expresion": "entró en la aldea",
+          "tipo": "combinación de palabras observadas",
+          "evidencia": [
+            {
+              "palabra": "entró",
+              "fuentes": [
+                {
+                  "obra": "conha-nh0001",
+                  "frecuencia": 16
+                },
+                {
+                  "obra": "conha-nh0002",
+                  "frecuencia": 8
+                },
+                {
+                  "obra": "conha-nh0011",
+                  "frecuencia": 11
+                },
+                {
+                  "obra": "conha-nh0027",
+                  "frecuencia": 4
+                },
+                {
+                  "obra": "conha-nh0035",
+                  "frecuencia": 41
+                },
+                {
+                  "obra": "conha-nh0005",
+                  "frecuencia": 1
+                },
+                {
+                  "obra": "oro-prosa-07",
+                  "frecuencia": 4
+                }
+              ]
+            },
+            {
+              "palabra": "en",
+              "fuentes": [
+                {
+                  "obra": "conha-nh0001",
+                  "frecuencia": 782
+                },
+                {
+                  "obra": "conha-nh0002",
+                  "frecuencia": 2351
+                },
+                {
+                  "obra": "conha-nh0011",
+                  "frecuencia": 827
+                },
+                {
+                  "obra": "conha-nh0027",
+                  "frecuencia": 1105
+                },
+                {
+                  "obra": "conha-nh0035",
+                  "frecuencia": 2630
+                },
+                {
+                  "obra": "conha-nh0005",
+                  "frecuencia": 392
+                },
+                {
+                  "obra": "oro-prosa-07",
+                  "frecuencia": 162
+                }
+              ]
+            },
+            {
+              "palabra": "la",
+              "fuentes": [
+                {
+                  "obra": "conha-nh0001",
+                  "frecuencia": 1237
+                },
+                {
+                  "obra": "conha-nh0002",
+                  "frecuencia": 3011
+                },
+                {
+                  "obra": "conha-nh0011",
+                  "frecuencia": 1439
+                },
+                {
+                  "obra": "conha-nh0027",
+                  "frecuencia": 1929
+                },
+                {
+                  "obra": "conha-nh0035",
+                  "frecuencia": 4397
+                },
+                {
+                  "obra": "conha-nh0005",
+                  "frecuencia": 524
+                },
+                {
+                  "obra": "oro-prosa-07",
+                  "frecuencia": 294
+                }
+              ]
+            },
+            {
+              "palabra": "aldea",
+              "fuentes": [
+                {
+                  "obra": "conha-nh0002",
+                  "frecuencia": 12
+                },
+                {
+                  "obra": "conha-nh0027",
+                  "frecuencia": 9
+                },
+                {
+                  "obra": "conha-nh0035",
+                  "frecuencia": 1
+                },
+                {
+                  "obra": "conha-nh0005",
+                  "frecuencia": 6
+                },
+                {
+                  "obra": "oro-prosa-07",
+                  "frecuencia": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slot": "sitio",
+          "expresion": "la plaza",
+          "tipo": "expresión contigua",
+          "evidencia": [
+            {
+              "obra": "conha-nh0001",
+              "frecuencia": 4
+            },
+            {
+              "obra": "conha-nh0002",
+              "frecuencia": 8
+            },
+            {
+              "obra": "conha-nh0011",
+              "frecuencia": 5
+            },
+            {
+              "obra": "conha-nh0027",
+              "frecuencia": 6
+            },
+            {
+              "obra": "conha-nh0035",
+              "frecuencia": 41
+            },
+            {
+              "obra": "conha-nh0005",
+              "frecuencia": 1
+            },
+            {
+              "obra": "oro-prosa-07",
+              "frecuencia": 1
+            }
+          ]
+        },
+        {
+          "slot": "sonido",
+          "expresion": "el ruido de los pasos",
+          "tipo": "expresión contigua",
+          "evidencia": [
+            {
+              "obra": "conha-nh0027",
+              "frecuencia": 1
+            }
+          ]
+        },
+        {
+          "slot": "objeto",
+          "expresion": "una promesa",
+          "tipo": "expresión contigua",
+          "evidencia": [
+            {
+              "obra": "conha-nh0002",
+              "frecuencia": 2
+            }
+          ]
+        },
+        {
+          "slot": "verbo",
+          "expresion": "pensó",
+          "tipo": "expresión contigua",
+          "evidencia": [
+            {
+              "obra": "conha-nh0011",
+              "frecuencia": 4
+            },
+            {
+              "obra": "conha-nh0027",
+              "frecuencia": 1
+            },
+            {
+              "obra": "conha-nh0035",
+              "frecuencia": 2
+            },
+            {
+              "obra": "oro-prosa-07",
+              "frecuencia": 1
+            }
+          ]
+        },
+        {
+          "slot": "cierre",
+          "expresion": "seguir adelante",
+          "tipo": "expresión contigua",
+          "evidencia": [
+            {
+              "obra": "conha-nh0027",
+              "frecuencia": 1
+            },
+            {
+              "obra": "conha-nh0035",
+              "frecuencia": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "texto": "La luz del día se extendía sobre las casas. Apenas se distinguía el ruido de los pasos entre los demás sonidos del lugar. Todo parecía inmóvil, como si la esperanza hubiera ocupado hasta el último rincón. Poco a poco, el paisaje fue adquiriendo una expresión distinta.",
+      "modo": "descriptivo",
+      "semilla": 28,
+      "metodo": "plantillas redactadas + expresiones o palabras atestiguadas, selección ponderada por raíz de frecuencia; no es un LLM",
+      "obras_analizadas": 8,
+      "coincidencia_8_palabras": false,
+      "evidencias": [
+        {
+          "slot": "luz",
+          "expresion": "la luz del día",
+          "tipo": "expresión contigua",
+          "evidencia": [
+            {
+              "obra": "conha-nh0035",
+              "frecuencia": 2
+            }
+          ]
+        },
+        {
+          "slot": "paisaje",
+          "expresion": "las casas",
+          "tipo": "expresión contigua",
+          "evidencia": [
+            {
+              "obra": "conha-nh0001",
+              "frecuencia": 10
+            },
+            {
+              "obra": "conha-nh0002",
+              "frecuencia": 4
+            },
+            {
+              "obra": "conha-nh0011",
+              "frecuencia": 3
+            },
+            {
+              "obra": "conha-nh0027",
+              "frecuencia": 1
+            },
+            {
+              "obra": "conha-nh0035",
+              "frecuencia": 10
+            },
+            {
+              "obra": "conha-nh0005",
+              "frecuencia": 2
+            }
+          ]
+        },
+        {
+          "slot": "sonido",
+          "expresion": "el ruido de los pasos",
+          "tipo": "expresión contigua",
+          "evidencia": [
+            {
+              "obra": "conha-nh0027",
+              "frecuencia": 1
+            }
+          ]
+        },
+        {
+          "slot": "sustantivo",
+          "expresion": "la esperanza",
+          "tipo": "expresión contigua",
+          "evidencia": [
+            {
+              "obra": "conha-nh0001",
+              "frecuencia": 1
+            },
+            {
+              "obra": "conha-nh0002",
+              "frecuencia": 6
+            },
+            {
+              "obra": "conha-nh0011",
+              "frecuencia": 1
+            },
+            {
+              "obra": "conha-nh0027",
+              "frecuencia": 1
+            },
+            {
+              "obra": "conha-nh0035",
+              "frecuencia": 11
+            },
+            {
+              "obra": "conha-nh0005",
+              "frecuencia": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "texto": "La memoria no nos devuelve aquello que hemos perdido, pero nos enseña a mirar de otro modo lo que todavía poseemos. Hay momentos en que la esperanza vale más que cualquier certeza. No siempre es posible cambiar lo sucedido; lo que sí podemos hacer es aprender a seguir adelante.",
+      "modo": "reflexivo",
+      "semilla": 29,
+      "metodo": "plantillas redactadas + expresiones o palabras atestiguadas, selección ponderada por raíz de frecuencia; no es un LLM",
+      "obras_analizadas": 8,
+      "coincidencia_8_palabras": false,
+      "evidencias": [
+        {
+          "slot": "reflexion",
+          "expresion": "la memoria",
+          "tipo": "expresión contigua",
+          "evidencia": [
+            {
+              "obra": "conha-nh0002",
+              "frecuencia": 3
+            },
+            {
+              "obra": "conha-nh0027",
+              "frecuencia": 3
+            },
+            {
+              "obra": "conha-nh0035",
+              "frecuencia": 3
+            },
+            {
+              "obra": "conha-nh0005",
+              "frecuencia": 1
+            },
+            {
+              "obra": "oro-prosa-07",
+              "frecuencia": 2
+            }
+          ]
+        },
+        {
+          "slot": "virtud",
+          "expresion": "la esperanza",
+          "tipo": "expresión contigua",
+          "evidencia": [
+            {
+              "obra": "conha-nh0001",
+              "frecuencia": 1
+            },
+            {
+              "obra": "conha-nh0002",
+              "frecuencia": 6
+            },
+            {
+              "obra": "conha-nh0011",
+              "frecuencia": 1
+            },
+            {
+              "obra": "conha-nh0027",
+              "frecuencia": 1
+            },
+            {
+              "obra": "conha-nh0035",
+              "frecuencia": 11
+            },
+            {
+              "obra": "conha-nh0005",
+              "frecuencia": 2
+            }
+          ]
+        },
+        {
+          "slot": "cierre",
+          "expresion": "seguir adelante",
+          "tipo": "expresión contigua",
+          "evidencia": [
+            {
+              "obra": "conha-nh0027",
+              "frecuencia": 1
+            },
+            {
+              "obra": "conha-nh0035",
+              "frecuencia": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
