@@ -19,7 +19,7 @@ def paragraphs(s):
             yield a,s[a:end];a=end
         if s[a:b].strip():yield a,s[a:b]
 def pg_check(a):
-    p=ROOT/a["ruta_original"];h=p.read_text(encoding="utf-8-sig")[:15000]
+    p=ROOT/a["ruta_original"];h=p.read_text(encoding=a.get("codificacion_origen","utf-8-sig"))[:15000]
     h=re.split(r"\*\*\*\s*START",h,flags=re.I)[0]
     def field(k):
         m=re.search(r"(?im)^"+k+r":\s*(.+)",h);return fold(m.group(1)) if m else ""
