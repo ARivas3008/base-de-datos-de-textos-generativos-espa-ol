@@ -28,14 +28,25 @@ jobs:
           node scripts/generar_texto.mjs narrativo 27 --piloto > /tmp/narrativo.json
           node scripts/generar_texto.mjs descriptivo 28 --piloto > /tmp/descriptivo.json
           node scripts/generar_texto.mjs reflexivo 29 --piloto > /tmp/reflexivo.json
+          mkdir -p salida/generacion
+          for mode_seed in narrativo:27 descriptivo:28 reflexivo:29; do
+            mode=${mode_seed%:*}
+            seed=${mode_seed#*:}
+            node scripts/generar_texto.mjs "$mode" "$seed" --piloto > "salida/generacion/$mode.json"
+            cmp "/tmp/$mode.json" "salida/generacion/$mode.json"
+          done
           python - <<'PY'
           import json
-          samples=json.load(open('bd/ejemplos/generacion-piloto.json'))['resultados']
-          for sample in samples:
-              actual=json.load(open('/tmp/'+sample['modo']+'.json'))
-              assert sample==actual, sample['modo']
-          print('3 ejemplos reproducidos de manera determinista')
+          from pathlib import Path
+          rows=[json.loads(p.read_text()) for p in sorted(Path('salida/generacion').glob('*.json'))]
+          assert len(rows)==3 and all(x['obras_analizadas']==8 and not x['coincidencia_8_palabras'] and x['evidencias'] for x in rows)
+          for x in rows: print(x['modo']+': '+x['texto'])
           PY
+      - name: Publicar muestras reproducidas en checkout
+        uses: actions/upload-artifact@v4
+        with:
+          name: generacion-validada
+          path: salida/generacion/
       - name: Preparar textos y comprobar las 140 fuentes
         run: |
           python scripts/extraer_corpus.py || test -s catalogo/resultado.json
