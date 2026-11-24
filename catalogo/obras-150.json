@@ -2761,7 +2761,15 @@
       "formato": "gutenberg",
       "derechos": "Dominio público en EE. UU. según ficha Gutenberg; autor fallecido hace más de 80 años",
       "url_fuente": "https://www.gutenberg.org/ebooks/52894",
-      "pg_id": 52894
+      "pg_id": 52894,
+      "repositorio_fuente": "GITenberg/Azul-Obras-Completas-Vol-IV_52894",
+      "revision_fuente": "master",
+      "ruta_fuente": "52894-0.txt",
+      "sha_git_fuente": "a257ad86a2fd65603e472217d33fa7ec60c09cd4",
+      "bytes_fuente": 221367,
+      "url_descarga": "https://raw.githubusercontent.com/GITenberg/Azul-Obras-Completas-Vol-IV_52894/master/52894-0.txt",
+      "codificacion_prevista": "utf-8",
+      "copia_digital": "GITenberg; conservar licencia del archivo original"
     },
     {
       "id": "pg-50341",
@@ -2774,7 +2782,15 @@
       "formato": "gutenberg",
       "derechos": "Dominio público en EE. UU. según ficha Gutenberg; autor fallecido hace más de 80 años",
       "url_fuente": "https://www.gutenberg.org/ebooks/50341",
-      "pg_id": 50341
+      "pg_id": 50341,
+      "repositorio_fuente": "GITenberg/Cantos-de-Vida-y-Esperanza-Los-Cisnes-y-otros-poemas-Obras-Completas-Vol-VII_50341",
+      "revision_fuente": "master",
+      "ruta_fuente": "50341-8.txt",
+      "sha_git_fuente": "93471035c39905c27c7d9646fc18843d197a1763",
+      "bytes_fuente": 106645,
+      "url_descarga": "https://raw.githubusercontent.com/GITenberg/Cantos-de-Vida-y-Esperanza-Los-Cisnes-y-otros-poemas-Obras-Completas-Vol-VII_50341/master/50341-8.txt",
+      "codificacion_prevista": "iso-8859-1",
+      "copia_digital": "GITenberg; conservar licencia del archivo original"
     },
     {
       "id": "pg-51711",
@@ -2787,7 +2803,15 @@
       "formato": "gutenberg",
       "derechos": "Dominio público en EE. UU. según ficha Gutenberg; autor fallecido hace más de 80 años",
       "url_fuente": "https://www.gutenberg.org/ebooks/51711",
-      "pg_id": 51711
+      "pg_id": 51711,
+      "repositorio_fuente": "GITenberg/El-Canto-Errante-Obras-Completas-Vol-XVI_51711",
+      "revision_fuente": "master",
+      "ruta_fuente": "51711-0.txt",
+      "sha_git_fuente": "f768b5e070617f8271996ddbe9f5acf00ce35893",
+      "bytes_fuente": 117203,
+      "url_descarga": "https://raw.githubusercontent.com/GITenberg/El-Canto-Errante-Obras-Completas-Vol-XVI_51711/master/51711-0.txt",
+      "codificacion_prevista": "utf-8",
+      "copia_digital": "GITenberg; conservar licencia del archivo original"
     },
     {
       "id": "pg-70984",
@@ -2800,7 +2824,15 @@
       "formato": "gutenberg",
       "derechos": "Dominio público en EE. UU. según ficha Gutenberg; autor fallecido hace más de 80 años",
       "url_fuente": "https://www.gutenberg.org/ebooks/70984",
-      "pg_id": 70984
+      "pg_id": 70984,
+      "repositorio_fuente": "GITenberg/En-las-orillas-del-Sar_70984",
+      "revision_fuente": "master",
+      "ruta_fuente": "70984-0.txt",
+      "sha_git_fuente": "b3e54e284ef8abeaddcf6dec877210bde0b69ea1",
+      "bytes_fuente": 189112,
+      "url_descarga": "https://raw.githubusercontent.com/GITenberg/En-las-orillas-del-Sar_70984/master/70984-0.txt",
+      "codificacion_prevista": "utf-8",
+      "copia_digital": "GITenberg; conservar licencia del archivo original"
     },
     {
       "id": "pg-14765",
@@ -2813,7 +2845,15 @@
       "formato": "gutenberg",
       "derechos": "Dominio público en EE. UU. según ficha Gutenberg; autor fallecido hace más de 80 años",
       "url_fuente": "https://www.gutenberg.org/ebooks/14765",
-      "pg_id": 14765
+      "pg_id": 14765,
+      "repositorio_fuente": "GITenberg/El-Gaucho-Mart-n-Fierro_14765",
+      "revision_fuente": "master",
+      "ruta_fuente": "14765-8.txt",
+      "sha_git_fuente": "3b0b6f57490b27635e284e55a54be2624b5f51ee",
+      "bytes_fuente": 89462,
+      "url_descarga": "https://raw.githubusercontent.com/GITenberg/El-Gaucho-Mart-n-Fierro_14765/master/14765-8.txt",
+      "codificacion_prevista": "iso-8859-1",
+      "copia_digital": "GITenberg; conservar licencia del archivo original"
     },
     {
       "id": "pg-15066",
@@ -2826,7 +2866,15 @@
       "formato": "gutenberg",
       "derechos": "Dominio público en EE. UU. según ficha Gutenberg; autor fallecido hace más de 80 años",
       "url_fuente": "https://www.gutenberg.org/ebooks/15066",
-      "pg_id": 15066
+      "pg_id": 15066,
+      "repositorio_fuente": "GITenberg/La-Vuelta-de-Mart-n-Fierro_15066",
+      "revision_fuente": "master",
+      "ruta_fuente": "15066-8.txt",
+      "sha_git_fuente": "e94b7924dd8df1e511e462bebe6ccc80c0320670",
+      "bytes_fuente": 169177,
+      "url_descarga": "https://raw.githubusercontent.com/GITenberg/La-Vuelta-de-Mart-n-Fierro_15066/master/15066-8.txt",
+      "codificacion_prevista": "iso-8859-1",
+      "copia_digital": "GITenberg; conservar licencia del archivo original"
     },
     {
       "id": "pg-68525",
@@ -2839,7 +2887,15 @@
       "formato": "gutenberg",
       "derechos": "Dominio público en EE. UU. según ficha Gutenberg; autor fallecido hace más de 80 años",
       "url_fuente": "https://www.gutenberg.org/ebooks/68525",
-      "pg_id": 68525
+      "pg_id": 68525,
+      "repositorio_fuente": "GITenberg/Poesias-completas_68525",
+      "revision_fuente": "master",
+      "ruta_fuente": "68525-0.txt",
+      "sha_git_fuente": "d2b2fc4466fbb532ec838525dddef8963a6fca17",
+      "bytes_fuente": 261434,
+      "url_descarga": "https://raw.githubusercontent.com/GITenberg/Poesias-completas_68525/master/68525-0.txt",
+      "codificacion_prevista": "utf-8",
+      "copia_digital": "GITenberg; conservar licencia del archivo original"
     },
     {
       "id": "pg-68131",
@@ -2852,7 +2908,15 @@
       "formato": "gutenberg",
       "derechos": "Dominio público en EE. UU. según ficha Gutenberg; autor fallecido hace más de 80 años",
       "url_fuente": "https://www.gutenberg.org/ebooks/68131",
-      "pg_id": 68131
+      "pg_id": 68131,
+      "repositorio_fuente": "GITenberg/Obras_68131",
+      "revision_fuente": "master",
+      "ruta_fuente": "68131-0.txt",
+      "sha_git_fuente": "418e1d746c331a71962375a5ec494aaa59ad89f6",
+      "bytes_fuente": 414886,
+      "url_descarga": "https://raw.githubusercontent.com/GITenberg/Obras_68131/master/68131-0.txt",
+      "codificacion_prevista": "utf-8",
+      "copia_digital": "GITenberg; conservar licencia del archivo original"
     },
     {
       "id": "pg-22899",
@@ -2865,20 +2929,36 @@
       "formato": "gutenberg",
       "derechos": "Dominio público en EE. UU. según ficha Gutenberg; autor fallecido hace más de 80 años",
       "url_fuente": "https://www.gutenberg.org/ebooks/22899",
-      "pg_id": 22899
+      "pg_id": 22899,
+      "repositorio_fuente": "GITenberg/Ariel_22899",
+      "revision_fuente": "master",
+      "ruta_fuente": "22899-8.txt",
+      "sha_git_fuente": "b2166a5eee632ea94d07aece94cd561b92046f09",
+      "bytes_fuente": 178387,
+      "url_descarga": "https://raw.githubusercontent.com/GITenberg/Ariel_22899/master/22899-8.txt",
+      "codificacion_prevista": "iso-8859-1",
+      "copia_digital": "GITenberg; conservar licencia del archivo original"
     },
     {
-      "id": "pg-77298",
+      "id": "pg-21282",
       "autor": "Ricardo Palma",
-      "titulo": "Las mejores tradiciones peruanas",
+      "titulo": "Tradiciones peruanas (edición digital Gutenberg)",
       "pais": "Perú",
       "genero": "narrativa",
       "fallecimiento": 1919,
       "idioma_original": "es",
       "formato": "gutenberg",
       "derechos": "Dominio público en EE. UU. según ficha Gutenberg; autor fallecido hace más de 80 años",
-      "url_fuente": "https://www.gutenberg.org/ebooks/77298",
-      "pg_id": 77298
+      "url_fuente": "https://www.gutenberg.org/ebooks/21282",
+      "pg_id": 21282,
+      "repositorio_fuente": "GITenberg/Tradiciones-peruanas_21282",
+      "revision_fuente": "master",
+      "ruta_fuente": "21282-8.txt",
+      "sha_git_fuente": "4746ab01d116bd4925110342f64c0b2963e5e80f",
+      "bytes_fuente": 305617,
+      "url_descarga": "https://raw.githubusercontent.com/GITenberg/Tradiciones-peruanas_21282/master/21282-8.txt",
+      "codificacion_prevista": "iso-8859-1",
+      "copia_digital": "GITenberg; conservar licencia del archivo original"
     }
   ]
 }
