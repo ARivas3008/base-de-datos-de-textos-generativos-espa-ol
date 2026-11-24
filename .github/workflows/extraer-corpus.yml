@@ -1,0 +1,35 @@
+name: Extraer corpus literario
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/extraer-corpus.yml'
+permissions:
+  contents: write
+concurrency:
+  group: extraer-corpus-main
+  cancel-in-progress: false
+jobs:
+  extraer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Extraer y verificar
+        id: extract
+        continue-on-error: true
+        run: python3 scripts/extraer_corpus.py
+      - name: Publicar los archivos realmente extraídos
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add corpus catalogo/resultado.json catalogo/resultado.csv
+          if ! git diff --cached --quiet; then
+            git commit -m "Materializar corpus literario y publicar reporte de integridad"
+            git push origin HEAD:main
+          fi
+      - name: Comprobar cobertura
+        if: steps.extract.outcome != 'success'
+        run: exit 1
