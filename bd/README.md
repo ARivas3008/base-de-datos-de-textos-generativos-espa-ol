@@ -68,3 +68,13 @@ sha256sum -c SHA256SUMS
 cat lexico.sqlite.gz.part-* | gzip -d > lexico.sqlite
 ```
 La gramática automática todavía debe superar su ejecución y controles de integridad. No confundir el piloto generativo con una gramática derivada de las 140 obras.
+
+## Modelo de ensayo argumentativo
+
+```bash
+node scripts/generar_ensayo.mjs 41 --piloto
+# Sin --piloto utiliza el corpus normalizado no Gutenberg.
+node scripts/generar_ensayo.mjs 41
+```
+
+El tema del prototipo es lectura y pensamiento crítico. Tiene cinco párrafos funcionales: tesis, dos argumentos, contraargumento y respuesta, conclusión. Las proposiciones y los marcos de oración son manuales; nueve opciones léxicas o discursivas se eligen de expresiones contiguas realmente observadas en los libros, con ponderación de raíz de frecuencia. No constituye generación temática libre ni una prueba de que los autores sostengan las tesis. El ejemplo ejecutado sobre diez textos y su evidencia por obra se conserva en `bd/ejemplos/ensayo-piloto.json`. El control de secuencias de ocho palabras se limita a las fuentes analizadas y no garantiza originalidad universal.
