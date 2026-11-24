@@ -51,3 +51,20 @@ SELECT pais,genero,count(*) FROM obra GROUP BY pais,genero;
 - bd/esquema.sql: esquema y vistas.
 - scripts/construir_bd.py: anotación, conteos, integridad.
 - salida/: bases e informes locales (las bases grandes se distribuyen por artefacto).
+
+## Generación controlada (prototipo ejecutado)
+Requiere Node.js 18 o superior y el corpus normalizado. No requiere un servicio LLM ni claves.
+```bash
+node scripts/generar_texto.mjs narrativo 27 --piloto
+node scripts/generar_texto.mjs descriptivo 28 --piloto
+node scripts/generar_texto.mjs reflexivo 29 --piloto
+# Omitir --piloto para analizar todos los textos no Gutenberg.
+```
+El motor combina plantillas manuales con opciones léxicas atestiguadas en el corpus, ponderadas por la raíz de sus frecuencias. Si no hay expresión contigua observada, exige evidencia de todas las palabras de la opción y lo identifica como combinación nueva. La comparación de secuencias ignora puntuación y capitalización; rechaza coincidencias de ocho palabras consecutivas con las obras que procesa. Esto no garantiza originalidad universal. No es un modelo neuronal entrenado ni un generador de temática libre. Los tres ejemplos reales del piloto, sus semillas y su evidencia individual están en bd/ejemplos/generacion-piloto.json.
+La base léxica verificada está en bd/datos, distribuida en fragmentos gzip con SHA256SUMS. En Linux/macOS:
+```bash
+cd bd/datos
+sha256sum -c SHA256SUMS
+cat lexico.sqlite.gz.part-* | gzip -d > lexico.sqlite
+```
+La gramática automática todavía debe superar su ejecución y controles de integridad. No confundir el piloto generativo con una gramática derivada de las 140 obras.
