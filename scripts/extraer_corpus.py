@@ -76,7 +76,7 @@ def process(a):
         encoding="utf-8-sig"
         try: s=b.decode(encoding)
         except UnicodeDecodeError:
-            if a.get("repositorio_fuente")!="Jero2760/estilometria": raise
+            if a.get("repositorio_fuente")!="Jero2760/estilometria" and a["formato"]!="gutenberg": raise
             encoding="cp1252"
             s=b.decode(encoding)
         if "\x00" in s or "\ufffd" in s: raise ValueError("Caracteres inválidos")
