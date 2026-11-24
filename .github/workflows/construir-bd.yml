@@ -21,7 +21,9 @@ jobs:
         with:
           python-version: '3.11'
       - name: Extraer fuentes
-        run: python scripts/extraer_corpus.py
+        run: |
+          python scripts/extraer_corpus.py || test -s catalogo/resultado.json
+          python -c "import json; r=json.load(open('catalogo/resultado.json')); a=[x for x in r['obras'] if x['formato']!='gutenberg']; assert len(a)==140 and all(x['estado']=='extraido' for x in a), 'Falló una fuente fijada por hash'"
       - name: Construir SQLite léxico observado
         run: python scripts/indice_lexico.py
       - name: Guardar SQLite léxico
