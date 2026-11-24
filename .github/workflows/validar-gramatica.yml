@@ -1,0 +1,82 @@
+name: Validar gramática y generación
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/validar-gramatica.yml'
+permissions:
+  contents: write
+concurrency:
+  group: validar-gramatica
+  cancel-in-progress: false
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Reproducir ejemplos reales
+        run: |
+          node scripts/generar_texto.mjs narrativo 27 --piloto > /tmp/narrativo.json
+          node scripts/generar_texto.mjs descriptivo 28 --piloto > /tmp/descriptivo.json
+          node scripts/generar_texto.mjs reflexivo 29 --piloto > /tmp/reflexivo.json
+          python - <<'PY'
+          import json
+          samples=json.load(open('bd/ejemplos/generacion-piloto.json'))['resultados']
+          for sample in samples:
+              actual=json.load(open('/tmp/'+sample['modo']+'.json'))
+              assert sample==actual, sample['modo']
+          print('3 ejemplos reproducidos de manera determinista')
+          PY
+      - name: Preparar textos y comprobar las 140 fuentes
+        run: |
+          python scripts/extraer_corpus.py || test -s catalogo/resultado.json
+          python -c "import json; r=json.load(open('catalogo/resultado.json')); a=[x for x in r['obras'] if x['formato']!='gutenberg']; assert len(a)==140 and all(x['estado']=='extraido' for x in a)"
+      - name: Instalar y probar dependencias
+        run: |
+          python -m pip install -r requirements.txt
+          python -m pip install https://github.com/explosion/spacy-models/releases/download/es_core_news_sm-3.8.0/es_core_news_sm-3.8.0-py3-none-any.whl
+          python -m pip check
+          python -c "import click,spacy; nlp=spacy.load('es_core_news_sm'); print([(t.text,t.lemma_,t.pos_,t.dep_) for t in nlp('Las casas estaban vacías.')])"
+      - name: Prueba gramatical de dos obras
+        run: python scripts/construir_bd.py --limit 2 --output salida/piloto/espanol.sqlite
+      - name: Publicar piloto gramatical
+        uses: actions/upload-artifact@v4
+        with:
+          name: piloto-gramatical
+          path: salida/piloto/
+      - name: Construir base morfosintáctica
+        run: python scripts/construir_bd.py
+      - name: Exportar dataset generativo
+        run: python scripts/exportar_dataset.py
+      - name: Publicar base y dataset
+        uses: actions/upload-artifact@v4
+        with:
+          name: base-linguistica-espanola
+          path: |
+            salida/espanol.sqlite
+            salida/informe.json
+            salida/dataset/
+          retention-days: 90
+      - name: Publicar informe de integridad
+        run: |
+          mkdir -p bd/datos
+          cp salida/informe.json bd/datos/informe_nlp.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add bd/datos/informe_nlp.json
+          if ! git diff --cached --quiet; then git commit -m "Publicar resultado de validación gramatical"; fi
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then exit 0; fi
+          done
+          exit 1
