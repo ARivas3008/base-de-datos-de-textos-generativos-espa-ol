@@ -1,0 +1,309 @@
+{
+  "titulo": "La lectura y la formación del juicio propio",
+  "tipo": "ensayo argumentativo",
+  "tema": "lectura y pensamiento crítico",
+  "semilla": 41,
+  "obras_analizadas": 10,
+  "palabras": 373,
+  "estructura": [
+    "introducción y tesis",
+    "argumento 1",
+    "argumento 2",
+    "contraargumento y respuesta",
+    "conclusión"
+  ],
+  "texto": "Leer no consiste solamente en reconocer las palabras que otro ha escrito. Quien se acerca a un libro entra en contacto con una manera de comprender el mundo que puede ser distinta de la suya. De ese encuentro nace la posibilidad de examinar las propias convicciones y de descubrir los límites de la experiencia. Por ello, la lectura constituye un medio de formación del juicio propio, siempre que el lector no se contente con aceptar cuanto encuentra en las páginas.\n\nAnte todo, los libros amplían el horizonte de quien los lee. La vida de una persona está circunscrita a determinadas circunstancias, mientras que una obra literaria permite contemplar conflictos, aspiraciones y costumbres de otras épocas. Al reconocer en esas vidas problemas que también le conciernen, el lector advierte que sus preocupaciones no son exclusivamente individuales. Tal descubrimiento favorece el ejercicio de la razón, pues obliga a considerar otras explicaciones antes de formular una opinión definitiva.\n\nPor otra parte, la literatura enseña a distinguir entre la apariencia de una afirmación y aquello que le sirve de fundamento. Un personaje puede defender una causa justa mediante razones equivocadas, del mismo modo que una conducta aparentemente generosa puede ocultar un interés particular. Examinar estas contradicciones ayuda a apreciar los matices de las palabras y a comprender que una expresión convincente no equivale necesariamente a un argumento verdadero. En este sentido, la lectura contribuye a que la persona juzgue con mayor independencia.\n\nCon todo, sería excesivo atribuir a los libros una virtud que depende también de quien los lee. Una persona puede conocer muchas obras y conservar intactos sus prejuicios si nunca somete sus opiniones a examen. El valor formativo de la literatura no reside, por tanto, en la cantidad de páginas recorridas, sino en la disposición para confrontar lo leído con los hechos y admitir que una convicción propia puede resultar insuficiente.\n\nEn suma, la lectura adquiere su mayor significado cuando se convierte en una práctica de deliberación. No se trata de renunciar a las propias ideas para adoptar las de un escritor, sino de adquirir los medios necesarios para examinarlas con rigor. Así entendida, la literatura fortalece la prudencia y permite participar en la vida común con un juicio menos dependiente de las certezas ajenas.",
+  "coincidencias_8_palabras": 0,
+  "metodo": "estructura argumentativa y proposiciones redactadas manualmente; expresiones seleccionadas del corpus por raíz de frecuencia; no demuestra que las obras sostengan las tesis",
+  "evidencias": [
+    {
+      "funcion": "perspectiva",
+      "expresion": "la experiencia",
+      "frecuencia": 24,
+      "fuentes": [
+        {
+          "obra": "conha-nh0002",
+          "frecuencia": 3
+        },
+        {
+          "obra": "conha-nh0027",
+          "frecuencia": 2
+        },
+        {
+          "obra": "oro-prosa-07",
+          "frecuencia": 1
+        },
+        {
+          "obra": "oro-prosa-12",
+          "frecuencia": 9
+        },
+        {
+          "obra": "oro-prosa-13",
+          "frecuencia": 3
+        },
+        {
+          "obra": "oro-prosa-16",
+          "frecuencia": 4
+        },
+        {
+          "obra": "oro-teatro-04",
+          "frecuencia": 2
+        }
+      ]
+    },
+    {
+      "funcion": "capacidad",
+      "expresion": "la razón",
+      "frecuencia": 117,
+      "fuentes": [
+        {
+          "obra": "conha-nh0002",
+          "frecuencia": 3
+        },
+        {
+          "obra": "conha-nh0011",
+          "frecuencia": 3
+        },
+        {
+          "obra": "conha-nh0027",
+          "frecuencia": 5
+        },
+        {
+          "obra": "oro-prosa-12",
+          "frecuencia": 80
+        },
+        {
+          "obra": "oro-prosa-13",
+          "frecuencia": 16
+        },
+        {
+          "obra": "oro-prosa-16",
+          "frecuencia": 6
+        },
+        {
+          "obra": "oro-prosa-17",
+          "frecuencia": 1
+        },
+        {
+          "obra": "oro-teatro-04",
+          "frecuencia": 3
+        }
+      ]
+    },
+    {
+      "funcion": "inicio1",
+      "expresion": "Ante todo",
+      "frecuencia": 4,
+      "fuentes": [
+        {
+          "obra": "conha-nh0002",
+          "frecuencia": 1
+        },
+        {
+          "obra": "conha-nh0027",
+          "frecuencia": 3
+        }
+      ]
+    },
+    {
+      "funcion": "inicio2",
+      "expresion": "Por otra parte",
+      "frecuencia": 31,
+      "fuentes": [
+        {
+          "obra": "conha-nh0002",
+          "frecuencia": 13
+        },
+        {
+          "obra": "conha-nh0011",
+          "frecuencia": 3
+        },
+        {
+          "obra": "oro-prosa-12",
+          "frecuencia": 9
+        },
+        {
+          "obra": "oro-prosa-13",
+          "frecuencia": 2
+        },
+        {
+          "obra": "oro-prosa-16",
+          "frecuencia": 4
+        }
+      ]
+    },
+    {
+      "funcion": "contraste",
+      "expresion": "Con todo",
+      "frecuencia": 50,
+      "fuentes": [
+        {
+          "obra": "conha-nh0002",
+          "frecuencia": 16
+        },
+        {
+          "obra": "conha-nh0011",
+          "frecuencia": 3
+        },
+        {
+          "obra": "conha-nh0027",
+          "frecuencia": 4
+        },
+        {
+          "obra": "oro-prosa-12",
+          "frecuencia": 18
+        },
+        {
+          "obra": "oro-prosa-13",
+          "frecuencia": 2
+        },
+        {
+          "obra": "oro-prosa-16",
+          "frecuencia": 2
+        },
+        {
+          "obra": "oro-prosa-17",
+          "frecuencia": 4
+        },
+        {
+          "obra": "oro-teatro-04",
+          "frecuencia": 1
+        }
+      ]
+    },
+    {
+      "funcion": "cierre",
+      "expresion": "En suma",
+      "frecuencia": 22,
+      "fuentes": [
+        {
+          "obra": "conha-nh0002",
+          "frecuencia": 16
+        },
+        {
+          "obra": "conha-nh0011",
+          "frecuencia": 3
+        },
+        {
+          "obra": "oro-prosa-12",
+          "frecuencia": 2
+        },
+        {
+          "obra": "oro-prosa-13",
+          "frecuencia": 1
+        }
+      ]
+    },
+    {
+      "funcion": "valores",
+      "expresion": "la prudencia",
+      "frecuencia": 4,
+      "fuentes": [
+        {
+          "obra": "oro-prosa-12",
+          "frecuencia": 3
+        },
+        {
+          "obra": "oro-prosa-17",
+          "frecuencia": 1
+        }
+      ]
+    },
+    {
+      "funcion": "actividad",
+      "expresion": "la lectura",
+      "frecuencia": 4,
+      "fuentes": [
+        {
+          "obra": "conha-nh0027",
+          "frecuencia": 2
+        },
+        {
+          "obra": "oro-prosa-12",
+          "frecuencia": 1
+        },
+        {
+          "obra": "oro-prosa-17",
+          "frecuencia": 1
+        }
+      ]
+    },
+    {
+      "funcion": "dialogo",
+      "expresion": "las palabras",
+      "frecuencia": 62,
+      "fuentes": [
+        {
+          "obra": "conha-nh0002",
+          "frecuencia": 5
+        },
+        {
+          "obra": "conha-nh0011",
+          "frecuencia": 5
+        },
+        {
+          "obra": "conha-nh0027",
+          "frecuencia": 3
+        },
+        {
+          "obra": "oro-prosa-12",
+          "frecuencia": 31
+        },
+        {
+          "obra": "oro-prosa-13",
+          "frecuencia": 7
+        },
+        {
+          "obra": "oro-prosa-16",
+          "frecuencia": 5
+        },
+        {
+          "obra": "oro-prosa-17",
+          "frecuencia": 6
+        }
+      ]
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "conha-nh0002",
+      "titulo": "Divertidas aventuras del nieto de Juan Moreira"
+    },
+    {
+      "id": "conha-nh0011",
+      "titulo": "Sin rumbo"
+    },
+    {
+      "id": "conha-nh0017",
+      "titulo": "Amalia"
+    },
+    {
+      "id": "conha-nh0027",
+      "titulo": "La gran aldea"
+    },
+    {
+      "id": "oro-prosa-07",
+      "titulo": "Fuerza de la sangre"
+    },
+    {
+      "id": "oro-prosa-12",
+      "titulo": "Nombres Cristo"
+    },
+    {
+      "id": "oro-prosa-13",
+      "titulo": "Perfecta Casada"
+    },
+    {
+      "id": "oro-prosa-16",
+      "titulo": "Guerras Granada"
+    },
+    {
+      "id": "oro-prosa-17",
+      "titulo": "Lengua"
+    },
+    {
+      "id": "oro-teatro-04",
+      "titulo": "lavidaessueno"
+    }
+  ]
+}
